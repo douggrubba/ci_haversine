@@ -14,9 +14,12 @@ Just drop this model into your `application/models` folder (download or git)
 `$this->haversine->table_name = 'locations';`
 
 #### Run the "Spatial" query
-`$locaitons = $this->haversine->closest(36, -80);`
+`$locations = $this->haversine->closest(36, -80);`
 
 ### Extra Params
 
 #### Maximum Distance
-`$locaitons = $this->haversine->closest(36, -80, 25); //25 Miles`
+`$locations = $this->haversine->closest(36, -80, 25); //25 Miles`
+
+#### Maximum Locations
+`$locations = $this->haversine->closest(36, -80, 25, 10); //10 Locations`
