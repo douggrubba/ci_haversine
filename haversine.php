@@ -84,7 +84,7 @@
             /*
              *  Make sure the results are within the search criteria
              */
-            $this->db->having('user_id', $max_distance);
+            $this->db->having('distance <', $max_distance, false);
 
             /*
              *  Limit the number of results that the search will return
