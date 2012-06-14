@@ -14,7 +14,7 @@ Just drop this model into your `application/models` folder (download or git)
 `$this->haversine->table_name = 'locations';`
 
 #### Run the "Spatial" query
-`$locations = $this->haversine->closest(36, -80);`
+`$locations = $this->haversine->closest(36, -80); //lat, lng`
 
 ### Extra Params
 
@@ -23,3 +23,9 @@ Just drop this model into your `application/models` folder (download or git)
 
 #### Maximum Locations
 `$locations = $this->haversine->closest(36, -80, 25, 10); //10 Locations`
+
+#### Define the Units of Measurement
+`$locations = $this->haversine->closest(36, -80, 25, 10, 'miles'); //miles or kilometers`
+
+#### Define what fields you would like back
+`$locations = $this->haversine->closest(36, -80, 25, 10, 'miles', array('id, name')); //false for * or single dimensional array`
