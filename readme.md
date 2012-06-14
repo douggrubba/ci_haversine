@@ -28,4 +28,4 @@ Just drop this model into your `application/models` folder (download or git)
 `$locations = $this->haversine->closest(36, -80, 25, 10, 'miles'); //miles or kilometers`
 
 #### Define what fields you would like back
-`$locations = $this->haversine->closest(36, -80, 25, 10, 'miles', array('id, name')); //false for * or single dimensional array`
+`$locations = $this->haversine->closest(36, -80, 25, 10, 'miles', array('id, name')); //false for * or single dim array`
