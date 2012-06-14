@@ -29,3 +29,9 @@ Just drop this model into your `application/models` folder (download or git)
 
 #### Define what fields you would like back
 `$locations = $this->haversine->closest(36, -80, 25, 10, 'miles', array('id, name')); //false for * or single dim array`
+
+## TODO
+* More units of measurement (feet, meters)
+* Support joins (ie join company meta to a store locations table)
+* Change direction of result
+* Put `units` param right after longitude
