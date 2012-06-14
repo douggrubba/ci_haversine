@@ -104,8 +104,6 @@
             $query = $this->db->get();
 
             return $query->result();
-
-            $query = $this->db->query($query_str);
         }
 
     }
