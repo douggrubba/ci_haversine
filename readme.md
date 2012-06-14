@@ -7,11 +7,16 @@ Just drop this model into your `application/models` folder (download or git)
 
 ## Usage
 
-__Load the Model__
+#### Load the Model
 `$this->load->model('haversine');`
 
-__Define the Table Name__
+#### Define the Table Name
 `$this->haversine->table_name = 'locations';`
 
-__Run the "Spatial" query__
+#### Run the "Spatial" query
 `$locaitons = $this->haversine->closest(36, -80);`
+
+### Extra Params
+
+#### Maximum Distance
+`$locaitons = $this->haversine->closest(36, -80, 25); //25 Miles`
