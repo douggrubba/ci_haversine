@@ -12,3 +12,7 @@ Just drop this model into your `application/models` folder (download or git)
 
 ## TODO
 * Calculate azimuth
+* Make lat/lng fields that can be defined (ie $this->lat_field = 'lat')
+
+## NOTE
+* Only tested on MySQL
