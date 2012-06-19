@@ -35,3 +35,4 @@ Just drop this model into your `application/models` folder (download or git)
 * Support joins (ie join company meta to a store locations table)
 * Change direction of result
 * Put `units` param right after longitude
+* Refractor into a more general GIS model?
